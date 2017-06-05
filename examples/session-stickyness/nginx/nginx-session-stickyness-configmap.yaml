@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: nginx-tcp-ingress-configmap
+  name: nginx-session-stickyness-configmap
   namespace: kube-system
 data:
-  9000: "default/http-svc:80"
+  load-balance: " ip_hash"
